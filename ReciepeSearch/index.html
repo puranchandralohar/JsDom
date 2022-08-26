@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-group">
+            <input type="text" placeholder="Enter Your Text Here" class="input">
+            <button type="submit" class="btn">Submit</button>
+        </div>
+
+        <div class="section"></div>
+    </div>
+    
+
+</body>
+<script>
+    //Queries
+    let inputBox = document.querySelector('.input');
+    let button = document.querySelector('.btn');
+
+    button.addEventListener('click',()=>{
+
+        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputBox.value}`)
+
+        .then((res)=>res.json())
+        .then((data)=>{
+
+            let meals = data["meals"];
+            console.log(meals);
+            
+            meals.forEach(e => {
+                let result = `<div class="content">
+                    <h1>Receipe - ${e.strMeal}</h1>
+                    <img src = "${e.strMealThumb}">
+                    <h3>Instruction - </h3>
+                    <p>${e.strInstructions}</p>
+                    </div>`    
+                let show = document.querySelector('.section');
+                show.innerHTML += result;
+            });
+                
+            
+            // console.log(meals)
+        }).catch((err)=> alert('error'))
+    })
+</script>
+</html>
