@@ -1,0 +1,60 @@
+[{
+    "firstname":"Sourav",
+    "lastname":"Ganguly",
+    "location":"Kolkata",
+    "Profession":"Sports Person"
+},
+{
+    "firstname":"Mahendra Singh",
+    "lastname":"Dhoni",
+    "location":"Ranchi",
+    "Profession":"Sports Person"
+},
+{
+    "firstname":"Gautam",
+    "lastname":"Ghambhir",
+    "location":"Delhi",
+    "Profession":"Politician"
+},
+{
+    "firstname":"Yuvraj",
+    "lastname":"Singh",
+    "location":"Punjab",
+    "Profession":"Sports Person"
+},
+{
+    "firstname":"Ravindra",
+    "lastname":"Jadeja",
+    "location":"Chennei",
+    "Profession":"Sports Person"
+},
+{
+    "firstname":"Mamta",
+    "lastname":"Banerjee",
+    "location":"Kolkata",
+    "Profession":"Politician"
+},
+{
+    "firstname":"Arvind",
+    "lastname":"Kejriwaal",
+    "location":"Delhi",
+    "Profession":"Politician"
+},
+{
+    "firstname":"Rahul",
+    "lastname":"Gandhi",
+    "location":"Delhi",
+    "Profession":"Politician"
+},
+{
+    "firstname":"Ankita",
+    "lastname":"Lokhande",
+    "location":"Mumbai",
+    "Profession":"Actress"
+},
+{
+    "firstname":"Mouni",
+    "lastname":"Roy",
+    "location":"Mumbai",
+    "Profession":"Actress"
+}]
